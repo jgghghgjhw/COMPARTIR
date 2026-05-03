@@ -54,10 +54,10 @@ public class DataProductos {
 			ps.setInt(1, p.getIdProducto());
 			return ps.executeUpdate()>0;
 			
-		} catch (Exception e) {
-			return false;
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
-		
+		return false;
 	}
 
 	public boolean actualizarProductos(Productos p) {

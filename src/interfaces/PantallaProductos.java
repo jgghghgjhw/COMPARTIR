@@ -29,6 +29,7 @@ import java.awt.event.MouseEvent;
 
 public class PantallaProductos {
 
+	
 	public JFrame frmGestionProductos;
 	private JTextField txtCodigoBarras;
 	private JTextField txtNombre;
@@ -170,18 +171,21 @@ public class PantallaProductos {
 		sclProductos.setViewportView(tblProductos);
 		
 		JButton btnEliminar = new JButton("Eliminar");
-		btnEliminar.setIcon(redimensionar(40,40,"/img/delete1.png"));
+		
 		btnEliminar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					if(fila!=-1) {
 						
-						int opcion= JOptionPane.showConfirmDialog(null, "Estas seguro de eliminar producto??","ELIMINAR PRODUCTO",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,redimensionar(32, 32,"/png/cecy.jpeg"));
+						int opcion= JOptionPane.showConfirmDialog(null, "Estas seguro de eliminar producto??","ELIMINAR PRODUCTO",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,
+								 redimensionar(32, 32,"/img/cecy.jpeg"));
 						if(opcion ==0) {
 							if(p.eliminarProducto()) {
+								limpiar();
+								cargarProductos();
 								JOptionPane.showMessageDialog(null, "SE ELIMINO CORRECTAMENTE", "EXITO!!!!",
 										JOptionPane.QUESTION_MESSAGE, redimensionar(32, 32,"/img/cecy.jpeg"));
-							
+								
 							}else {
 								JOptionPane.showMessageDialog(null, "ERROR AL ELIMINAR", "ERROR", JOptionPane.ERROR_MESSAGE);
 
@@ -194,14 +198,13 @@ public class PantallaProductos {
 								JOptionPane.QUESTION_MESSAGE, redimensionar(32, 32,"/img/cecy.jpeg"));
 					}
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(null, "ERROR AL ELIMINAR", "ERROR", JOptionPane.ERROR_MESSAGE);
-
+					JOptionPane.showMessageDialog(null, "ERROR AL ELIMINAR 2", "ERROR", JOptionPane.ERROR_MESSAGE);
 					
 					
 				}
 			}
 		});
-		
+		btnEliminar.setIcon(redimensionar(40,40,"/img/delete1.png"));
 		btnEliminar.setVerticalTextPosition(SwingConstants.BOTTOM);
 		btnEliminar.setVerticalAlignment(SwingConstants.CENTER);
 		btnEliminar.setHorizontalTextPosition(SwingConstants.CENTER);
