@@ -21,6 +21,7 @@ public class RENE {
 		System.out.print(" KRISTEN CHAVEZ");
 		System.out.print(" TEAM PALOMO :D");
 		System.out.print(" TEAM PALOMO regina");
+		System.out.print(" TEAM PALOMO :D");
 	}
 	
 
