@@ -15,6 +15,7 @@ public class RENE {
 		System.out.print("HOLA JESUS ");
 		
 		System.out.print(" ");
+		System.out.print(" planta");
 
 	}
 	
