@@ -16,6 +16,7 @@ public class RENE {
 		
 		System.out.print(" ");
 		System.out.print(" planta");
+		System.out.print(" flor");
 
 	}
 	
