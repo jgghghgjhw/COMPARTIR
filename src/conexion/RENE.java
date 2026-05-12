@@ -30,7 +30,7 @@ public class RENE {
 		
 		
 		
-		
+		System.out.print(" hola xd");
 
 
 		System.out.print(" SALSA");
