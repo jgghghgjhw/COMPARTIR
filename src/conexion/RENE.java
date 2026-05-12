@@ -24,12 +24,19 @@ public class RENE {
 		System.out.print(" TEAM PALOMO regina");
 		System.out.print(" TEAM PALOMO :D");
 		System.out.print(" TEAM");
+
 		System.out.print(" PIANO");
 		
 		
 		
 		
 		
+
+
+		System.out.print(" SALSA");
+		System.out.print(" TAMARINDO");
+		System.out.print(" TERESA");
+
 		
 		
 
