@@ -19,10 +19,17 @@ public class RENE {
 		System.out.print(" flor");
 		System.out.print(" JESUS ALBERTO ARROYO");
 		System.out.print(" KRISTEN CHAVEZ");
+
 		System.out.print(" TEAM PALOMO :D");
 		System.out.print(" TEAM PALOMO regina");
 		System.out.print(" TEAM PALOMO :D");
 		System.out.print(" TEAM");
+
+		System.out.print(" SALSA");
+		System.out.print(" TAMARINDO");
+		
+		
+
 	}
 	
 
