@@ -38,6 +38,7 @@ public class RENE {
 		System.out.print(" TERESA");
 		System.out.print(" ARTURO");
 		System.out.print(" Aida");
+		System.out.print(" Maria");
 
 		
 		
