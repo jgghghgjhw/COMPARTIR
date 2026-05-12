@@ -27,6 +27,7 @@ public class RENE {
 
 		System.out.print(" SALSA");
 		System.out.print(" TAMARINDO");
+		System.out.print(" TERESA");
 		
 		
 
